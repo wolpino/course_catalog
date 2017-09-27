@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destroyer</title>
+</head>
+<body>
+    <h1>You sure you wanna delete the following:</h1>
+    <p>Name: {{ course.name }}</p>
+    <p>Description: {{ course.desc }}</p>
+    
+    <h3><a href="{% url 'main' %}">Nah</a></h3>
+    <h3><a href="{% url 'delete' number=course.id %}">delete</a>Yes! I wanna trash it</h3>
+    
+    
+</body>
+</html>
